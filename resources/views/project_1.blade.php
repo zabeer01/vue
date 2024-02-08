@@ -9,7 +9,8 @@
     <div id="test">
 
         <div v-if="showDOM">
-            <p>@{{ title }} - @{{ bookAge }}</p>
+            <p>
+                <span @click="changeTitle()" >@{{ title }}</span> - @{{ bookAge }}</p>
             <button @click="bookAge++">increment</button>
             <button @click="bookAge--">decrease</button>
             <p @click="changeTitle()"> change title </p>
